@@ -66,7 +66,7 @@ The global bioinformatics and cloud genomics market is valued at approximately *
 
 ## 💻 Open-Source GitHub Projects
 
-*All open-source repositories are ranked in descending order by GitHub stars. Star counts update dynamically.*
+*All open-source repositories are ranked in descending order by GitHub_Stars. Stars_Counts update dynamically.*
 
 1. **[Pachyderm](https://github.com/pachyderm/pachyderm)** [![Stars](https://img.shields.io/github/stars/pachyderm/pachyderm?style=social&color=white)](https://github.com/pachyderm/pachyderm/stargazers)  
    **Data-lineage and pipelining engine for reproducible data science** (Apache-2.0). Provides version-controlled, containerized data pipelines with Git-like data primitives, automated incremental processing, and complete data provenance tracking.
@@ -147,7 +147,7 @@ Contributions are warmly welcomed! Please follow these simple guidelines:
 2. 🌿 Create a feature branch (`git checkout -b feature/new-pipeline`).
 3. 📝 Add or update entries following the established format:
    - Name and link to the official repository/product
-   - GitHub stars social badge linking to `/stargazers` (for open-source tools)
+   - GitHub_Stars social badge linking to `/stargazers` (for open-source tools)
    - 1–2 sentence description highlighting license, key capabilities, and use-case
 4. 🚀 Submit a **Pull Request** with a clear explanation of the addition.
 
