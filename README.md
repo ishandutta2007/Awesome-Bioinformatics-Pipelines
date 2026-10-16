@@ -30,6 +30,7 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## Table of Contents
 
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
 - [SaaS/Hosted Platforms](#saas-hosted-platforms)
 
 - [Open-Source GitHub Projects](#open-source-github-projects)
@@ -40,67 +41,28 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 
 
+## Sector Overview & Market Dynamics
+
+The global bioinformatics and cloud genomics market is valued at approximately **$20B–$23.5B in 2025–2026** and projected to exceed **$63B–$118B by the mid-2030s** (~15%–21% CAGR), driven by exponential drops in sequencing costs, clinical multi-omics adoption, and AI-accelerated drug discovery. The sector remains **moderately fragmented**: sequencing hardware and primary upstream data generation are heavily concentrated around dominant players (e.g., Illumina), but downstream secondary workflow orchestration, tertiary analysis, and clinical interpretation remain fragmented across diverse proprietary SaaS suites, academic clouds, and open-source orchestration standards.
+
+
+
 ## SaaS/Hosted Platforms
 
+| Platform | Company Size (Valuation / Revenue) | Pricing | Free Tier Limit | Description |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Illumina BaseSpace](https://www.illumina.com/products/by-type/informatics-products/basespace-sequence-hub.html)** | ~$40B–$41.5B Market Cap / $4.34B–$4.6B Annual Revenue | Starting at $0/mo (Pay-As-You-Go, $1/BIC credit consumption for compute/DRAGEN analysis) | 30-day free trial with 1 TB cloud storage and 100–250 promotional BioInsight credits (BICs) | Illumina's cloud platform for sequencing data analysis, storage, and sharing with native sequencer upload. |
+| **[DNAnexus](https://www.dnanexus.com/)** | ~$600M Valuation / ~$80M–$85M Annual Revenue | Starting at $450,000/yr (Base enterprise platform contract list on AWS Marketplace; variable compute units from $50/unit) | Free base account registration; pilot programs (e.g. UK Biobank RAP) include £40 initial credit valid for 90 days (no open compute free tier) | Governed cloud data workspace for omics, phenotypes, multi-language pipelines (CWL, WDL, Nextflow), and clinical analytics. |
+| **[Seven Bridges](https://www.sevenbridges.com/)** | ~$130M Standalone Valuation / €27M Annual Revenue (Velsera parent) | Starting at $0 platform fee on NCI Cancer Genomics Cloud (pure pass-through cloud compute/storage rates, e.g. AWS EC2/S3 costs) | $300 free cloud compute and storage credits upon registration via NCI Cancer Genomics Cloud (covers ~40–50 analyses) | CWL-centered commercial & cancer research platform hosting NCI CGC with 850+ curated workflows and multi-cloud execution. |
+| **[Nextflow Tower (Seqera Platform)](https://seqera.io/)** | ~$50M–$100M Valuation / ~$9.5M–$18.5M Annual Revenue | Starting at $0/mo (Cloud Basic); Pro/Enterprise starting tiers require custom team quotes | Free forever plan with up to 3 users, 3 concurrent pipeline runs, 250 run histories, 100 datasets, and 100 GB/mo Fusion storage | Official Nextflow management and control plane for collaborative pipeline monitoring, access control, and multi-cloud/HPC execution. |
+| **[BC Platforms](https://www.bcplatforms.com/)** | ~$20M+ Growth Funding / ~$25M Annual Revenue | Starting at $48,000/yr (Base 12-month BC Mosaic instance contract on AWS Marketplace) | No perpetual free tier or public self-serve trial (private pilot/demo access provided upon sales qualification) | Genomics data management, biobank governance, and cohort discovery platform for clinical interpretation and precision medicine. |
+| **[LifeOmic](https://lifeomic.com/)** | Acquired by Fountain Life / ~$3.5M Annual Revenue | Starting at $17/mo to $40/mo (Consumer/clinician LIFE Ascent tier; enterprise PHC billed by custom storage and compute volume) | Free forever plan for basic consumer health tracking; 7-day free trial for premium clinical mobile apps (enterprise PHC requires custom pilot demo) | Precision health cloud with genomics data management, clinical EHR integration, and longevity diagnostics. |
+| **[Terra.bio](https://terra.bio/)** | Non-profit / Consortium-backed (Broad Institute, Microsoft & Verily) | $0 platform fee (100% direct pass-through for Google Cloud or Azure compute, disk, and bucket storage) | $300 in free Google Cloud credits for new users with up to 5 exploratory active workspaces (eligible for NIH STRIDES credits) | Biomedical analysis platform with Jupyter notebooks, WDL/Cromwell execution, and large collaborative cancer/consortia workspaces. |
+| **[Galaxy Cloud](https://usegalaxy.org/)** | Academic / Consortia funded (ELIXIR, NIH, NSF) | $0/mo (Open-access community-hosted public cloud servers) | Free forever with 250 GB storage quota per user (expandable to 500 GB for verified ELIXIR researchers; 50 GB per dataset limit) | Accessible web-based GUI workflow system with a massive open tool catalog and zero command-line prerequisite. |
+| **[Cromwell Cloud](https://cromwell.readthedocs.io/)** | Open-source foundation (Broad Institute) / Commercial integrations | $0 platform fee (Managed execution via Terra or self-deployed on cloud compute pass-through) | Included within Terra.bio's $300 free trial cloud credit allocation | Broad Institute's WDL execution engine optimized for GATK4 best-practice pipelines and scalable workflow orchestration. |
+| **[Arvados](https://arvados.org/)** | Commercialized by Curii Corp / Open-source foundation | Starting at $0 software license (Open-source self-hosted; enterprise managed cluster support via Curii contracts) | Free forever for self-hosted instances (all open-source code under AGPL-3.0); commercial managed clusters require custom evaluation agreement | Open-source biomedical big-data platform running CWL workflows with Git-based tracking and Keep content-addressable storage. |
 
 
-- **[Seven Bridges](https://www.sevenbridges.com/)**  
-
-  **The most CWL-centered commercial platform**—native authoring and execution model maps directly to the published Common Workflow Language standard . Hosts the **NCI Cancer Genomics Cloud** with more than **850 curated tools and workflows** . Supports CWL 1.0/1.1/1.2, Nextflow packaged as ZIP, and WDL through wrappers (with different caching and job behavior) . **Deployment**: virtual private cloud, local HPC, or hybrid; current project locations name AWS us-east-1 and Google Cloud us-west1, with Azure regions on request . **Limitation**: nonpublic license rates—priced through Sales .
-
-
-
-- **[DNAnexus](https://www.dnanexus.com/)**  
-
-  **Governed data workspace** for omics, phenotype, notebooks, applications, and workflows under a managed project boundary . **Multi-language ingestion**: native workflows, CWL, WDL, and licensed Nextflow provide migration paths . Documented compute catalog includes **AWS, Azure, and Oracle Cloud Infrastructure GPUs** . Exchanges with ELNs, LIMS, and clinical data management systems; enterprise identity services can be used for organization login . **Limitation**: public pricing not available—enterprise subscription and optional modules require commercial review; Cohort Browser requires an Apollo license .
-
-
-
-- **[Illumina BaseSpace](https://www.illumina.com/products/by-type/informatics-products/basespace-sequence-hub.html)**  
-
-  Illumina's cloud platform for sequencing data analysis, storage, and sharing. **Native integration with Illumina sequencing instruments** for seamless data upload. Hosts a large catalog of apps and workflows for secondary analysis.
-
-
-
-- **[Terra.bio](https://terra.bio/)**  
-
-  **Biomedical data analysis platform** developed by the Broad Institute, Microsoft, and Verily. Features **Jupyter notebooks, WDL/Cromwell workflows, and data sharing** across institutions. **Trusted by the Human Cell Atlas, BRAIN Initiative, and large consortia** .
-
-
-
-- **[Nextflow Tower (Seqera Platform)](https://seqera.io/)**  
-
-  **Nextflow control plane**—pipeline model is explicitly version-controlled, access-controlled, and reproducible . **The cleanest fit when Nextflow source and configuration are already authoritative** . **Portability spans executors rather than multiple workflow languages**—official training material names **Slurm, LSF, SGE, and PBS** among supported HPC schedulers .
-
-
-
-- **[Galaxy Cloud](https://usegalaxy.org/)**  
-
-  **Web-based GUI workflow platform** with a large tool catalog . **AFL-3 licensed**. Galaxy Cloud and BRC Analytics were developed to address infrastructure limitations and enhance accessibility and reproducibility . **The most accessible entry point** for researchers without command-line expertise.
-
-
-
-- **[Cromwell Cloud](https://cromwell.readthedocs.io/)**  
-
-  **Broad's WDL execution engine**—Scala-based, BSD-3-Clause . **The execution engine behind GATK4-based pipelines** . Available as a managed service through Terra and other platforms.
-
-
-
-- **[Arvados](https://arvados.org/)**  
-
-  **Open-source platform for managing and processing genomic and biomedical data** . **Curoverse's Arvados runs bcbio pipelines via CWL** . **The open-source alternative to commercial genomics platforms**—used by academic and research institutions.
-
-
-
-- **[BC Platforms](https://www.bcplatforms.com/)**  
-
-  **Genomics data management and analytics platform** for healthcare and research. Features **biobank management, cohort discovery, and clinical interpretation**.
-
-
-
-- **[LifeOmic](https://lifeomic.com/)**  
-
-  **Cloud platform for precision health** with genomics data management, clinical data integration, and analytics. **The most focused on clinical genomics** workflows.
 
 
 
